@@ -3,18 +3,22 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E3370)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
+
+# WinForms Scheduler - Fetch appointments when binding to custom objects
+
+This example demonstrates how to handle the [FetchAppointments](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraScheduler.SchedulerStorageBase.FetchAppointments) event to limit the number of appointments fetched from the data source. The Schedler Control is bound to a collection of custom objects. 
+
+Do not set the `SchedulerStorage.Appointments` or `SchedulerStorage.Appointments.DataSource` property in the `FetchAppointments` event handler. Update the collection (add/remove items) that is assigned to the `SchedulerStorage.Appointments.DataSource` property.
+
+Read the following help topic for additional information: [FetchAppointments Event - Handling Large Datasets](https://docs.devexpress.com/WindowsForms/8385/controls-and-libraries/scheduler/data-binding/fetchappointments-event-handling-large-datasets).
+
+
+## Files to Review
 
 * [CustomObjects.cs](./CS/CustomObjects.cs) (VB: [CustomObjects.vb](./VB/CustomObjects.vb))
 * [Form1.cs](./CS/Form1.cs) (VB: [Form1.vb](./VB/Form1.vb))
-* [Program.cs](./CS/Program.cs) (VB: [Program.vb](./VB/Program.vb))
-<!-- default file list end -->
-# How to handle FetchAppointments event when binding to a collection of custom objects
 
 
-<p>This example illustrates how to correctly handle the <a href="http://documentation.devexpress.com/#CoreLibraries/DevExpressXtraSchedulerSchedulerStorageBase_FetchAppointmentstopic"><u>SchedulerStorageBase.FetchAppointments Event</u></a> when the SchedlerControl is bound to a collection of custom object (see <a href="https://www.devexpress.com/Support/Center/p/E750">How to bind the SchedulerControl to a collection of custom objects</a>). Although this scenario has a little practical sense (generally, handling this event is appropriate when using an external datasource), the corresponding example is very useful from the technical point of you. It clearly shows that you should not modify the <strong>SchedulerStorage.Appointments</strong> or <strong>SchedulerStorage.Appointments.DataSource</strong> property directly in the FetchAppointments event handler (to be more precise, this is not correct). Instead, you should update (add/remove items) the collection that is assigned to the <strong>SchedulerStorage.Appointments.DataSource</strong> property. Note that it is the most important part of this example. Also, it shows how the <a href="http://documentation.devexpress.com/#WindowsForms/DevExpressXtraSchedulerDateNavigator_BoldAppointmentDatestopic"><u>DateNavigator.BoldAppointmentDates Property</u></a> value affect the fetch interval. Please review the <a href="http://documentation.devexpress.com/#WindowsForms/CustomDocument8385"><u>FetchAppointments Event - Tackling Large Datasets</u></a> help section for more information.</p>
+## See Also
 
-<br/>
-
-
+* [WinForms Scheduler - Bind to a collection of custom appointments](https://github.com/DevExpress-Examples/winforms-scheduler-bind-to-custom-objects)
