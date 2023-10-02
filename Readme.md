@@ -6,7 +6,7 @@
 
 # WinForms Scheduler - Fetch appointments when binding to custom objects
 
-This example demonstrates how to handle the [FetchAppointments](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraScheduler.SchedulerStorageBase.FetchAppointments) event to limit the number of appointments fetched from the data source. The Schedler Control is bound to a collection of custom objects. 
+This example demonstrates how to handle the [FetchAppointments](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraScheduler.SchedulerStorageBase.FetchAppointments) event to limit the number of appointments fetched from the data source. The Scheduler Control is bound to a collection of custom objects. 
 
 Do not set the `SchedulerStorage.Appointments` or `SchedulerStorage.Appointments.DataSource` property in the `FetchAppointments` event handler. Update the collection (add/remove items) that is assigned to the `SchedulerStorage.Appointments.DataSource` property.
 
