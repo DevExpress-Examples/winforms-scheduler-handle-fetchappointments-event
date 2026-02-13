@@ -24,7 +24,7 @@ Read the following help topic for additional information: [FetchAppointments Eve
 
 * [WinForms Scheduler - Bind to a collection of custom appointments](https://github.com/DevExpress-Examples/winforms-scheduler-bind-to-custom-objects)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-scheduler-handle-fetchappointments-event&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-scheduler-handle-fetchappointments-event&~~~was_helpful=no)
 
